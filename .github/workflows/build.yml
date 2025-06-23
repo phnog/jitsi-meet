@@ -20,3 +20,4 @@ jobs:
         with:
           extra_args: |
             -Dsonar.exclusions=**/*.java  # Ignora arquivos Java
+            -Dsonar.java.binaries=target/classes  # Adiciona a pasta de binários
