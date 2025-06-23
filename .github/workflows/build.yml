@@ -19,5 +19,5 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           extra_args: |
-            -Dsonar.exclusions=**/*.java  # Ignora arquivos Java
-            -Dsonar.java.binaries=target/classes  # Adiciona a pasta de binários
+            -Dsonar.exclusions='*/.java/*,android/,ios/,flow-typed/*'
+
